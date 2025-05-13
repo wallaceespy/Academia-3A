@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia 3A</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Academia 3A</title>
+    
 </head>
 <body>
     <header>
@@ -12,29 +16,69 @@
             <div class="logo">
                 <img src="../public/assets/logo2.jpg" alt="Academia 3A">
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Academia</a></li>
-                <li><a href="natacao.html">Natação</a></li>
-                <li><a href="hidroginastica.html">Hidroginástica</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-            </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-links">
+                <a href="index1.html">Início</a>
+                <a href="#index1.html">Natação</a>
+                <a href="#cards">Cards</a>
+                <a href="#contato">Contato</a>
             </div>
-        </nav>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Início</a>
+    <a href="index1.html">Natação</a>
+    <a href="#cards">Cards</a>
+    <a href="#contato">Contato</a>
+  </div>
+        
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Bem-vindo à Academia 3A</h1>
-            <p>Sua saúde é nossa prioridade.</p>
-            <a href="#natacao" class="btn">Saiba Mais</a>
-        </div>
-    </section>
-
+ 
+<div class="carrossel">
+  <div class="slides">
+      <!-- Slide 1 -->
+      <div class="slide">
+          <img src="../public/assets/Carrossel 1.jpg" alt="Academia">
+          <div class="legenda">
+              <h3>Academia Completa</h3>
+              <p>"Equipamentos modernos para seu treino."</p>
+          </div>
+      </div>
+      
+      <!-- Slide 2 -->
+      <div class="slide">
+          <img src="../public/assets/Carrossel 2.jpg" alt="Natação">
+          <div class="legenda">
+              <h3>Treino com Personal</h3>
+              <p>"O Personal Trainer que vai te levar além dos seus limites."</p>
+          </div>
+      </div>
+      
+      <!-- Slide 3 -->
+      <div class="slide">
+          <img src="../public/assets/Carrossel 3.jpg" alt="Personal Trainer">
+          <div class="legenda">
+              <h3>Seu progresso é a nossa missão</h3>
+              <p>"Força,Disciplina e Resultados."</p>
+          </div>
+      </div>
+  </div>
+  
+  <div class="controles">
+      <button class="btn anterior">❮</button>
+      <button class="btn proximo">❯</button>
+  </div>
+  
+  <div class="indicadores">
+      <div class="indicador ativo"></div>
+      <div class="indicador"></div>
+      <div class="indicador"></div>
+  </div>
+</div>
+<section id="cards">
     <section class="pricing-section">
+      
         <div class="card-1">
             <h2>Mensalidade</h2>
             <p class="price">R$ 64,99<span>/mês</span></p>
@@ -42,8 +86,16 @@
                 <li>Acesso ilimitado à academia</li>
                 
             </ul>
-            <button>Assinar</button>
+            <button onclick="redirectToWhatsApp()" >Assinar</button>
         </div>
+        <script>
+            function redirectToWhatsApp() {
+                const phoneNumber = "5521983645008"; // Substitua pelo seu número
+                const message = "Olá, gostaria de assinar o plano mensal de R$64,99";
+                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(url, '_blank');
+            }
+        </script>
 
         <div class="card-1">
             <h2>Avaliação</h2>
@@ -52,40 +104,80 @@
                 <li>Avaliação física completa</li>
                 
             </ul>
-            <button>Agendar</button>
+            <button onclick="redirectToWhatsApp()">Agendar</button>
         </div>
+        <script>
+            function redirectToWhatsApp() {
+                const phoneNumber = "5521983645008"; // Substitua pelo seu número
+                const message = "Olá, gostaria de agendar uma avliação física.";
+                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(url, '_blank');
+            }
+        </script>
+
+        <div class="card-1">
+            <h2>Personal</h2>
+            <p class="price">R$ 49,99<span>/única</span></p>
+            <ul>
+                <li>Personal compartilhado 2x na semana </li>
+                
+            </ul>
+            <button onclick="redirectToWhatsApp()">Agendar horário</button>
+        </div>
+        <script>
+            function redirectToWhatsApp() {
+                const phoneNumber = "5521983645008"; // Substitua pelo seu número
+                const message = "Olá, gostaria de agendar um horário com o personal.";
+                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(url, '_blank');
+            }
+        </script>
+    </section>
     </section>
 
-
+    <div class="content-section-container">
     <section id="natacao" class="content-section card">
         <h2>Natação</h2>
-        
-
-        <p></p>
         <img src="../public/assets/natacao1.jpg" alt="Natação">
     </section>
 
     <section id="hidroginastica" class="content-section card">
         <h2>Academia</h2>
-        <p></p>
         <img src="../public/assets/academia (1).jpg" alt="Hidroginástica">
     </section>
 
     <section id="projetos" class="content-section card">
-        <h2>Projetos</h2>
-        <p>Conheça nossos projetos e iniciativas para a comunidade.</p>
-        <img src="images/projetos.jpg" alt="Projetos">
+        <h2>Personal</h2>
+        <img src="../public/assets/personal2.jpg" alt="Projetos">
     </section>
 
-    <div class="address">
-        <p>230 R. Fabiana de O. Marzulo</p>
-        <p>Nova Iguaçu, Rio de Janeiro</p>
-    </div>
+    <section class="address" id="endereço">
+      <h2 class="title">Nosso <span>Endereço</span></h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.8837913000107!2d-43.52824132547026!3d-22.769693532984355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995c2a759cdde5%3A0x81375b32b1efdacc!2sR.%20Fabiana%20de%20O.%20Marzulo%2C%20230%20-%20Valverde%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026290-810!5e0!3m2!1spt-BR!2sbr!4v1744561641810!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
-    <footer>
+      <footer>
+        <section id="contato">
+        <div class="share">
+            <h1>Contato</h1>
+          <a href="https://www.instagram.com/academiaatitudedocorpo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new--v1.png" alt="Instagram"></a>
+          <a href="https://wa.me/5521976776273" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="WhatsApp"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png" alt="Facebook"></a>
+        </div>
         <p>&copy; 2025 Academia 3A. Todos os direitos reservados.</p>
-    </footer>
+        </section>
+      </footer>
+
+
+    
+    </div>
+    </section>
+    
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   
 </body>
 </html>

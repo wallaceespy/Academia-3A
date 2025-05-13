@@ -11,48 +11,126 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="img/logo.png" alt="Escola de Natação Valverde">
-                <h1>Valverde</h1>
+                <img src="../public/assets/Escola de_20250421_123740_0000.png" alt="Escola de Natação Valverde">
+                <h1></h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#professores">Professores</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <section id="home" class="banner">
-        <div class="container">
-            <h2>Aprenda a nadar com os melhores</h2>
-            <p>Método exclusivo para todas as idades</p>
-            <a href="#cursos" class="btn">Conheça nossos cursos</a>
+         <!-- Botão para abrir menu no mobile -->
+    <button class="menu-toggle" aria-label="Abrir Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Menu único (usado no desktop e no mobile) -->
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#professores">Professores</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <div class="carrossel">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="../public/assets/nado borboleta.jpg" alt="Academia">
+                <div class="legenda">
+                    <h3></h3>
+                    <p>"Cada braçada é um passo em direção à sua melhor versão."</p>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="../public/assets/competicao.jpg" alt="Natação">
+                <div class="legenda">
+                    <h3></h3>
+                    <p>"Cada prova é uma nova chance de quebrar seus próprios limites."</p>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="../public/assets/natacao1.jpg" alt="Personal Trainer">
+                <div class="legenda">
+                    <h3></h3>
+                    <p>"Seu progresso é a nossa missão"</p>
+                </div>
+            </div>
         </div>
-    </section>
+        
+        <div class="controles">
+            <button class="btn anterior">❮</button>
+            <button class="btn proximo">❯</button>
+        </div>
+        
+        <div class="indicadores">
+            <div class="indicador ativo"></div>
+            <div class="indicador"></div>
+            <div class="indicador"></div>
+        </div>
+      </div>
 
     <section id="sobre" class="sobre">
         <div class="container">
-            <h2>Sobre a Escola Valverde</h2>
+            <h2>Sobre a Escola de Natação Valverde</h2>
             <div class="sobre-content">
                 <div class="sobre-text">
-                    <p>Fundada em 2005, a Escola de Natação Valverde tem como missão ensinar técnicas de natação seguras e eficientes para pessoas de todas as idades.</p>
-                    <p>Nossa metodologia exclusiva já formou mais de 5.000 alunos, desde bebês até idosos, sempre com foco na segurança, saúde e bem-estar.</p>
+                    <h1>Especializada em TAF</h1>
                     <ul>
-                        <li><i class="fas fa-check"></i> Piscina aquecida e tratada</li>
-                        <li><i class="fas fa-check"></i> Professores altamente qualificados</li>
-                        <li><i class="fas fa-check"></i> Turmas reduzidas</li>
-                        <li><i class="fas fa-check"></i> Acompanhamento individualizado</li>
+                        <li><i class="fas fa-check"></i>ESA / ESPACEX </li>
+                        <li><i class="fas fa-check"></i>FUZILEIRO NAVAL</li>
+                        <li><i class="fas fa-check"></i>APRENDIZ DE MARINHEIRO</li>
+                        <li><i class="fas fa-check"></i> BOMBEIRO </li>
+                        <li><i class="fas fa-check"></i>PF </li>
                     </ul>
-                </div>
+                    
+                    <br>
+                    <h1>Nossos horários</h1>
+<br>
+<div class="horarios-row">
+  <div class="dia">
+    <h3>Segunda</h3>
+    <ul>
+      <li><i class="fas fa-check"></i>09:00 às 09:40h</li>
+      <li><i class="fas fa-check"></i>14:00 às 14:40h</li>
+      <li><i class="fas fa-check"></i>17:00 às 17:40h</li>
+    </ul>
+  </div>
+  <div class="dia">
+    <h3>Quarta</h3>
+    <ul>
+      <li><i class="fas fa-check"></i>06:10 às 06:50h</li>
+      <li><i class="fas fa-check"></i>09:00 às 09:40h</li>
+      <li><i class="fas fa-check"></i>14:00 às 14:40h</li>
+      <li><i class="fas fa-check"></i>17:00 às 17:40h</li>
+    </ul>
+  </div>
+</div>
+
+<div class="horarios-row">
+  <div class="dia">
+    <h3>Quinta</h3>
+    <ul>
+      <li><i class="fas fa-check"></i>06:10 às 06:50h</li>
+      <li><i class="fas fa-check"></i>09:00 às 09:40h</li>
+      <li><i class="fas fa-check"></i>14:00 às 14:40h</li>
+      <li><i class="fas fa-check"></i>17:00 às 17:40h</li>
+    </ul>
+  </div>
+  <div class="dia">
+    <h3>Sexta</h3>
+    <ul>
+      <li><i class="fas fa-check"></i>06:10 às 06:50h</li>
+    </ul>
+  </div>
+</div>
+</div> 
                 <div class="sobre-img">
-                    <img src="img/aula1.jpg" alt="Aula de natação">
+                    <img src="../public/assets/natacao2.jpg" alt="Aula de natação">
                 </div>
             </div>
         </div>
@@ -62,29 +140,43 @@
         <div class="container">
             <h2>Nossos Cursos</h2>
             <div class="cursos-grid">
-                <div class="curso-card">
-                    <div class="curso-icon">
-                        <i class="fas fa-baby"></i>
-                    </div>
-                    <h3>Natação Infantil</h3>
-                    <p>Para crianças de 6 meses a 12 anos. Desenvolvimento aquático com segurança e diversão.</p>
-                    <span class="preco">R$ 180/mês</span>
-                </div>
+                
                 <div class="curso-card">
                     <div class="curso-icon">
                         <i class="fas fa-user"></i>
                     </div>
-                    <h3>Natação Adulto</h3>
+                    <h3>Natação </h3>
                     <p>Para iniciantes ou avançados. Melhore sua técnica, condicionamento e saúde.</p>
-                    <span class="preco">R$ 220/mês</span>
+                    <span class="preco"></span>
+                    
+                    <button onclick="redirectToWhatsApp()" >Assinar</button>
+                    <script>
+                        function redirectToWhatsApp() {
+                            const phoneNumber = "5521983645008"; // Substitua pelo seu número
+                            const message = "Olá, gostaria de assinar o plano mensal.";
+                            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                            window.open(url, '_blank');
+                        }
+                    </script>
+
                 </div>
                 <div class="curso-card">
                     <div class="curso-icon">
                         <i class="fas fa-medal"></i>
                     </div>
                     <h3>Treinamento Competitivo</h3>
-                    <p>Para atletas que desejam competir. Preparação física e técnica avançada.</p>
-                    <span class="preco">R$ 280/mês</span>
+                    <p>Para atletas que desejam competir. Preparação física(TAF) e técnica avançada.</p>
+                    <span class="preco"></span>
+                    <button onclick="redirectToWhatsApp()" >Assinar</button>
+                    <script>
+                        function redirectToWhatsApp() {
+                            const phoneNumber = "5521983645008"; // Substitua pelo seu número
+                            const message = "Olá, gostaria de assinar o plano mensal.";
+                            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                            window.open(url, '_blank');
+                        }
+                    </script>
+
                 </div>
                 <div class="curso-card">
                     <div class="curso-icon">
@@ -92,7 +184,17 @@
                     </div>
                     <h3>Hidroginástica</h3>
                     <p>Atividade física de baixo impacto ideal para todas as idades.</p>
-                    <span class="preco">R$ 160/mês</span>
+                    <span class="preco"></span>
+
+                    <button onclick="redirectToWhatsApp()" >Assinar</button>
+                    <script>
+                        function redirectToWhatsApp() {
+                            const phoneNumber = "5521983645008"; // Substitua pelo seu número
+                            const message = "Olá, gostaria de assinar o plano mensal.";
+                            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                            window.open(url, '_blank');
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -103,19 +205,14 @@
             <h2>Nossos Professores</h2>
             <div class="professores-grid">
                 <div class="professor-card">
-                    <img src="img/professor.jpg" alt="Professor Carlos">
-                    <h3>Carlos Valverde</h3>
+                    <img src="img/professor.jpg" alt="Professor Antonio">
+                    <h3>Antonio Mota</h3>
                     <p>Fundador e técnico com 20 anos de experiência. Formado em Educação Física com especialização em Natação.</p>
                 </div>
                 <div class="professor-card">
-                    <img src="img/professor2.jpg" alt="Professora Ana">
-                    <h3>Ana Silva</h3>
+                    <img src="img/professor2.jpg" alt="Professora André">
+                    <h3>André</h3>
                     <p>Especialista em natação infantil e adaptação ao meio líquido. 10 anos de experiência.</p>
-                </div>
-                <div class="professor-card">
-                    <img src="img/professor3.jpg" alt="Professor Marcos">
-                    <h3>Marcos Oliveira</h3>
-                    <p>Treinador de competição. Já formou diversos campeões estaduais e nacionais.</p>
                 </div>
             </div>
         </div>
@@ -127,32 +224,15 @@
             <div class="contato-content">
                 <div class="contato-info">
                     <h3>Informações</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Rua das Águas, 123 - Centro</p>
-                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
-                    <p><i class="fas fa-envelope"></i> contato@valverdenatacao.com.br</p>
-                    <p><i class="fas fa-clock"></i> Segunda a Sexta: 7h às 22h<br>Sábado: 8h às 14h</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Maria josé, 27 - Valverde</p>
+                    <p><i class="fas fa-phone"></i> (21) 99320-2277 / (21) 98364-5008 </p>
+                    
+                    <p><i class="fas fa-clock"></i> Segunda a Sexta: 6h às 17:40
                     <div class="social">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="contato-form">
-                    <h3>Agende uma aula experimental</h3>
-                    <form id="form-contato">
-                        <input type="text" placeholder="Seu nome" required>
-                        <input type="email" placeholder="Seu e-mail" required>
-                        <input type="tel" placeholder="Seu telefone" required>
-                        <select required>
-                            <option value="">Selecione um curso</option>
-                            <option>Natação Infantil</option>
-                            <option>Natação Adulto</option>
-                            <option>Treinamento Competitivo</option>
-                            <option>Hidroginástica</option>
-                        </select>
-                        <textarea placeholder="Mensagem"></textarea>
-                        <button type="submit" class="btn">Enviar</button>
-                    </form>
+                
                 </div>
             </div>
         </div>
@@ -163,7 +243,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <img src="img/logo.png" alt="Escola de Natação Valverde">
-                    <h3>Valverde</h3>
+                    <h3></h3>
                 </div>
                 <div class="footer-links">
                     <h4>Links Rápidos</h4>
@@ -175,13 +255,8 @@
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
-                <div class="footer-newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Receba nossas novidades e promoções</p>
-                    <form>
-                        <input type="email" placeholder="Seu e-mail">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+
+                    
                 </div>
             </div>
             <div class="footer-bottom">
