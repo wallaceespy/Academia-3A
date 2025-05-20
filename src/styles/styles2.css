@@ -1,0 +1,260 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.header h1 span {
+  color: #f1c40f;
+}
+
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+/* Menu com Efeito de Quadrado no Hover */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+/* Quadrado laranja que aparece ao passar o mouse */
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f1c40f; /* Cor laranja */
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Efeito ao passar o mouse */
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.hero {
+  background: url("https://images.unsplash.com/photo-1599058918142-2d17f579db69")
+    center/cover no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.content-section {
+  padding: 40px 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2ecc71;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .hero h2 {
+    font-size: 1.8em;
+  }
+}
+
+/* Animações */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-section {
+  padding: 40px 20px;
+  background-color: #eafaf1;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  color: #2ecc71;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Container geral mantém o estilo original */
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+/* Estilo padrão para imagens (mantém retangular) */
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+/* Container especial para a Mel */
+.image-card.mel {
+  width: 200px; /* Tamanho do círculo */
+  height: 200px; /* Tamanho do círculo */
+  margin: 0 auto; /* Centraliza */
+  border-radius: 50%; /* Forma circular */
+  overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Remove se não for necessário */
+}
+
+/* Remove o flexbox do container se existir */
+.image-card.mel {
+  display: block; /* Muda de flex para block */
+}
+
+/* Imagem redonda */
+.image-card.mel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Mantém o hover effect */
+.image-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Container para a legenda (novo) */
+.caption-container {
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Estilo da legenda */
+.caption {
+  display: inline-block; /* Faz o fundo se ajustar ao texto */
+  padding: 8px 20px;
+  background: #f1c40f;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.content-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.content-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  margin-top: 40px; /* Espaço extra acima do footer */
+  padding: 30px 20px; /* Padding maior */
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
