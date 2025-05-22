@@ -361,7 +361,7 @@ nav ul li a:hover {
 }
 
 .curso-card button:hover {
-    background-color: #ff473a; /* cor um pouco mais escura */
+    background-color: #00a8cc; /* cor um pouco mais escura */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra suave */
 }
 
