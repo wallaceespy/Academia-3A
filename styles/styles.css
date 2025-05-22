@@ -41,14 +41,24 @@ nav {
     margin-right: auto;
 }
 
+
+
 .logo img {
-    border-radius: 85%;
-    width: 100%; /* Faz a imagem ocupar toda a div */
-    height: 100%; /* Faz a imagem ocupar toda a div */
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
-    margin-right: auto; 
-   
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
 }
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 
 nav {
     display: flex;
