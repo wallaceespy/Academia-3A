@@ -14,7 +14,7 @@ body {
 
 .header {
   background: linear-gradient(90deg, #2ecc71, #27ae60);
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   color: white;
 }
@@ -82,7 +82,7 @@ nav ul li a:hover::before {
 .hero {
   background: url("https://images.unsplash.com/photo-1599058918142-2d17f579db69")
     center/cover no-repeat;
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
   color: white;
   background-blend-mode: overlay;
