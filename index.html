@@ -84,62 +84,46 @@
 </div>
 <section id="cards">
     <section class="pricing-section">
-      
-        <div class="card-1">
-            <h2>Mensalidade</h2>
-            <p class="price">R$ 64,99<span>/mês</span></p>
-            <ul>
-                <li>Acesso ilimitado à academia</li>
-                
-            </ul>
-            <button onclick="redirectToWhatsApp()" >Assinar</button>
-        </div>
-        <script>
-            function redirectToWhatsApp() {
-                const phoneNumber = "5521983645008"; // Substitua pelo seu número
-                const message = "Olá, gostaria de assinar o plano mensal de R$64,99";
-                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                window.open(url, '_blank');
-            }
-        </script>
-
-        <div class="card-1">
-            <h2>Avaliação</h2>
-            <p class="price">R$ 29,99<span>/única</span></p>
-            <ul>
-                <li>Avaliação física completa</li>
-                
-            </ul>
-            <button onclick="redirectToWhatsApp()">Agendar</button>
-        </div>
-        <script>
-            function redirectToWhatsApp() {
-                const phoneNumber = "5521983645008"; // Substitua pelo seu número
-                const message = "Olá, gostaria de agendar uma avliação física.";
-                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                window.open(url, '_blank');
-            }
-        </script>
-
-        <div class="card-1">
-            <h2>Personal</h2>
-            <p class="price">R$ 49,99<span>/única</span></p>
-            <ul>
-                <li>Personal compartilhado 2x na semana </li>
-                
-            </ul>
-            <button onclick="redirectToWhatsApp()">Agendar horário</button>
-        </div>
-        <script>
-            function redirectToWhatsApp() {
-                const phoneNumber = "5521983645008"; // Substitua pelo seu número
-                const message = "Olá, gostaria de agendar um horário com o personal.";
-                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                window.open(url, '_blank');
-            }
-        </script>
+  
+      <div class="card-1">
+        <h2>Mensalidade</h2>
+        <p class="price">R$ 64,99<span>/mês</span></p>
+        <ul>
+          <li>Acesso ilimitado à academia</li>
+        </ul>
+        <button onclick="redirectToWhatsApp('Olá, gostaria de assinar o plano mensal de R$64,99')">Assinar</button>
+      </div>
+  
+      <div class="card-1">
+        <h2>Avaliação</h2>
+        <p class="price">R$ 29,99<span>/única</span></p>
+        <ul>
+          <li>Avaliação física completa</li>
+        </ul>
+        <button onclick="redirectToWhatsApp('Olá, gostaria de agendar uma avaliação física.')">Agendar</button>
+      </div>
+  
+      <div class="card-1">
+        <h2>Personal</h2>
+        <p class="price">R$ 49,99<span>/única</span></p>
+        <ul>
+          <li>Personal compartilhado 2x na semana</li>
+        </ul>
+        <button onclick="redirectToWhatsApp('Olá, gostaria de agendar um horário com o personal.')">Agendar horário</button>
+      </div>
+  
+      <!-- Script único -->
+      <script>
+        function redirectToWhatsApp(message) {
+          const phoneNumber = "5521983645008"; // Seu número
+          const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+          window.open(url, '_blank');
+        }
+      </script>
+  
     </section>
-    </section>
+  </section>
+  
 
     <div class="content-section-container">
     <section id="natacao" class="content-section card">
@@ -167,7 +151,7 @@
         <div class="share">
             <h1>Contato</h1>
           <a href="https://www.instagram.com/academia_3a?igsh=MXh2aGMzNW85dHUwcg==" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new--v1.png" alt="Instagram"></a>
-          <a href="https://wa.me/5521976776273" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="WhatsApp"></a>
+          <a href="https://wa.me/5521983645008" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="WhatsApp"></a>
           <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png" alt="Facebook"></a>
         </div>
         <p>&copy; 2025 Academia 3A. Todos os direitos reservados Wallace Espece.</p>
