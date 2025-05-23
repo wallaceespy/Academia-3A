@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academia 3A - Sua melhor opção em treinamento físico, natação e saúde">
+    <link rel="stylesheet" href="styles/styles0.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Academia 3A - Treino, Natação e Saúde</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/logo2.jpg" alt="Academia 3A">
+            </div>
+            <div class="nav-links">
+                <a href="#">Início</a>
+                <a href="index1.html">Natação</a>
+                <a href="#cards">Planos</a>
+                <a href="#contato">Contato</a>
+                <a href="index2.html">Nutrifit Blog</a>
+            </div>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#" onclick="toggleMenu()">Início</a>
+            <a href="index1.html" onclick="toggleMenu()">Natação</a>
+            <a href="#cards" onclick="toggleMenu()">Planos</a>
+            <a href="#contato" onclick="toggleMenu()">Contato</a>
+            <a href="index2.html" onclick="toggleMenu()">Nutrifit Blog</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="carrossel">
+            <div class="slides">
+                <div class="slide">
+                    <img src="./assets/Carrossel 1.jpg" alt="Academia">
+                    <div class="legenda">
+                        <h3>Academia Completa</h3>
+                        <p>"Equipamentos modernos para seu treino."</p>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <img src="./assets/Carrossel 2.jpg" alt="Natação">
+                    <div class="legenda">
+                        <h3>Treino com Personal</h3>
+                        <p>"O Personal Trainer que vai te levar além dos seus limites."</p>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <img src="./assets/Carrossel 3.jpg" alt="Personal Trainer">
+                    <div class="legenda">
+                        <h3>Seu progresso é a nossa missão</h3>
+                        <p>"Força,Disciplina e Resultados."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controles">
+                <button class="btn anterior">❮</button>
+                <button class="btn proximo">❯</button>
+            </div>
+            
+            <div class="indicadores">
+                <div class="indicador ativo"></div>
+                <div class="indicador"></div>
+                <div class="indicador"></div>
+            </div>
+        </div>
+
+        <section id="cards" class="pricing-section">
+            <h2 class="section-title">Nossos Planos</h2>
+            <div class="pricing-cards-container">
+            <div class="card-1">
+                <h2>Mensalidade</h2>
+                <p class="price">R$ 64,99<span>/mês</span></p>
+                <ul>
+                    <li>Acesso ilimitado à academia</li>
+                    <li>Área de musculação</li>
+                    <li>Área de aeróbicos</li>
+                </ul>
+                <button onclick="redirectToWhatsApp('Olá, gostaria de assinar o plano mensal de R$64,99')">Assinar</button>
+            </div>
+        
+            <div class="card-1">
+                <h2>Avaliação</h2>
+                <p class="price">R$ 29,99<span>/única</span></p>
+                <ul>
+                    <li>Avaliação física completa</li>
+                    <li>Análise de composição corporal</li>
+                    <li>Plano de treino personalizado</li>
+                </ul>
+                <button onclick="redirectToWhatsApp('Olá, gostaria de agendar uma avaliação física.')">Agendar</button>
+            </div>
+        
+            <div class="card-1">
+                <h2>Personal</h2>
+                <p class="price">R$ 49,99<span>/aula</span></p>
+                <ul>
+                    <li>Personal compartilhado 2x na semana</li>
+                    
+                    <li>Acompanhamento de evolução</li>
+                </ul>
+                <button onclick="redirectToWhatsApp('Olá, gostaria de agendar um horário com o personal.')">Agendar horário</button>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <img src="./assets/natacao1.jpg" alt="Natação">
+                    <h3>Natação</h3>
+                    <p>Aulas para todas as idades e níveis, com professores especializados.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="./assets/academia (1).jpg" alt="Academia">
+                    <h3>Academia</h3>
+                    <p>Não é só treino. É estilo de vida.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="./assets/personal2.jpg" alt="Personal Trainer">
+                    <h3>Personal Trainer</h3>
+                    <p>Treinos personalizados para alcançar seus objetivos mais rápido.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="address" id="endereço">
+            <h2 class="section-title">Nosso <span>Endereço</span></h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.8837913000107!2d-43.52824132547026!3d-22.769693532984355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995c2a759cdde5%3A0x81375b32b1efdacc!2sR.%20Fabiana%20de%20O.%20Marzulo%2C%20230%20-%20Valverde%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026290-810!5e0!3m2!1spt-BR!2sbr!4v1744561641810!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="address-info">
+                <p>R. Fabiana de O. Marzulo, 230 - Valverde, Nova Iguaçu - RJ</p>
+                <p>CEP: 26290-810</p>
+                <p>Horário de funcionamento: Segunda a Sexta, 6h às 22h | Sábado, 8h às 14h</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contato</h3>
+                <p><strong>Telefone:</strong> (21) 98364-5008</p>
+                
+            </div>
+            
+            <div class="social-links">
+                <h3>Redes Sociais</h3>
+                <div class="share">
+                    <a href="https://www.instagram.com/academia_3a?igsh=MXh2aGMzNW85dHUwcg==" target="_blank" aria-label="Instagram">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new--v1.png" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/5521983645008" target="_blank" aria-label="WhatsApp">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="WhatsApp">
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Academia 3A. Todos os direitos reservados Wallace Espece.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function redirectToWhatsApp(message) {
+            const phoneNumber = "5521983645008";
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+        
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('show');
+        }
+        
+        // Carrossel automático
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelector('.slides');
+            const slide = document.querySelectorAll('.slide');
+            const btnPrev = document.querySelector('.anterior');
+            const btnNext = document.querySelector('.proximo');
+            const indicators = document.querySelectorAll('.indicador');
+            
+            let currentSlide = 0;
+            const slideCount = slide.length;
+            const slideWidth = slide[0].clientWidth;
+            
+            function goToSlide(n) {
+                slides.style.transform = `translateX(${-n * slideWidth}px)`;
+                currentSlide = n;
+                
+                // Atualiza indicadores
+                indicators.forEach((ind, i) => {
+                    ind.classList.toggle('ativo', i === currentSlide);
+                });
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                goToSlide(currentSlide);
+            }
+            
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+                goToSlide(currentSlide);
+            }
+            
+            btnNext.addEventListener('click', nextSlide);
+            btnPrev.addEventListener('click', prevSlide);
+            
+            // Configura autoplay
+            let slideInterval = setInterval(nextSlide, 5000);
+            
+            // Pausa autoplay quando o mouse está sobre o carrossel
+            const carrossel = document.querySelector('.carrossel');
+            carrossel.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            
+            carrossel.addEventListener('mouseleave', () => {
+                slideInterval = setInterval(nextSlide, 5000);
+            });
+            
+            // Adiciona clique nos indicadores
+            indicators.forEach((indicator, i) => {
+                indicator.addEventListener('click', () => {
+                    goToSlide(i);
+                });
+            });
+            
+            // Responsividade - redimensionamento
+            window.addEventListener('resize', () => {
+                slides.style.transform = `translateX(${-currentSlide * slide[0].clientWidth}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
